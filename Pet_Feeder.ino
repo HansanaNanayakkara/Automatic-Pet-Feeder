@@ -22,8 +22,8 @@ void setup()
   Blynk.begin(auth, ssid, pass);
   servo1.attach(2); // Attach servo 1 to GPIO 2
 
-  // Set a timer to open the lid every 1 minute
-  timer.setInterval(60000L, openLid);
+  // Set a timer to open the lid every 5h
+  timer.setInterval(18000000L, openLid);
 }
 
 void loop()
